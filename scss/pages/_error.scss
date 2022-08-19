@@ -4,8 +4,6 @@
 @use "../globals/variables" as v;
 
 .error-page {
-  // width: 100vw;
-  // @include m.flex(column, center, center);
   text-align: center;
 
   & .hero__bg--img {

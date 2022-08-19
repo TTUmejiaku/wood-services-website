@@ -12,7 +12,6 @@ section {
   margin: 0 auto;
 
   @include b.mq-up(medium) {
-    // width: 80%;
     max-width: f.rem(1235);
   }
 }
@@ -46,10 +45,6 @@ section {
   & p {
     font-weight: 500;
     font-size: var(--fs-p);
-
-    @include b.mq-up(medium) {
-      // font-size: f.rem(30);
-    }
   }
 }
 
@@ -190,15 +185,4 @@ section {
 
 .slider {
   position: relative;
-}
-
-.yellow {
-  border: 2px solid yellow;
-}
-.red {
-  border: 2px solid red;
-}
-
-.hide {
-  display: none;
 }

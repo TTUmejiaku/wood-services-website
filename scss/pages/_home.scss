@@ -16,7 +16,6 @@ body {
 
   &.show-nav {
     position: fixed;
-    // overflow: hidden;
 
     .bg-overlay {
       width: 100vw;
@@ -88,7 +87,6 @@ body {
     font-weight: 500;
 
     @include b.mq-up(medium) {
-      // font-size: f.rem(30);
       margin-bottom: f.rem(52);
     }
   }
@@ -182,8 +180,6 @@ body {
 }
 
 .about {
-  // position: relative;
-
   & .row {
     min-height: f.rem(647);
     width: 92%;
@@ -266,8 +262,6 @@ body {
 }
 
 .contact {
-  // position: relative;
-
   .section-title {
     @include b.mq-up(large) {
       text-align: right;

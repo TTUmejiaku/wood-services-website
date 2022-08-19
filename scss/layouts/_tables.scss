@@ -6,7 +6,6 @@
 .slide.grid {
   display: grid;
   grid-template-columns: 100%;
-  // grid-template-rows: f.rem(117) f.rem(88);
   grid-template-rows: 60% 40%;
   justify-content: center;
   padding: f.rem(8);
@@ -24,12 +23,6 @@
     color: var(--bg__dk-brown);
     border-collapse: collapse;
     border-radius: f.rem(14);
-    // max-width: f.rem(30);
-
-    // &:nth-child(3),
-    // &:nth-child(4) {
-    //   display: none;
-    // }
 
     tbody {
       tr {

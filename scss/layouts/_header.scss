@@ -84,17 +84,14 @@
               transform: translateX(15px);
               transform: translateX(15px);
               opacity: 0;
-              // background-color: black;
             }
             &.first {
-              width: f.rem(34);
-              transform: translate(0px, 0px) rotate(45deg);
-              // transform: translate(0px, -2px) rotate(45deg);
+              width: f.rem(23);
+              transform: translate(0px, -2px) rotate(45deg);
             }
             &.third {
-              width: f.rem(34);
-              transform: translate(-3px, 2px) rotate(-45deg);
-              // transform: translate(-3px, 3px) rotate(-45deg);
+              width: f.rem(23);
+              transform: translate(0px, 2px) rotate(-45deg);
             }
           }
         }
@@ -103,25 +100,23 @@
           background-color: var(--white);
           display: block;
           border-radius: f.rem(10);
-          height: f.rem(4);
-          transform-origin: 0 0;
+          height: f.rem(3);
           transition: 400ms;
 
           &.second {
-            width: f.rem(34);
-            // width: f.rem(23);
-            margin-block: f.rem(7);
+            width: f.rem(23);
+            margin-block: f.rem(5);
           }
 
           &.third {
             margin-left: auto;
-            width: f.rem(17);
-            // width: f.rem(11.5);
+            width: f.rem(11.5);
+            transform-origin: -5px 0;
           }
 
           &.first {
-            width: f.rem(17);
-            // width: f.rem(11.5);
+            width: f.rem(11.5);
+            transform-origin: 0 0;
           }
         }
       }

@@ -1,0 +1,30 @@
+@use "./variables" as v;
+@use "../abstracts/breakpoints" as b;
+@use "../abstracts/functions" as f;
+
+h1,
+h2 {
+  font-weight: normal;
+  line-height: 1.1;
+  margin-top: 0;
+  font-family: var(--ff__kyiv);
+}
+
+h3 {
+  font-family: var(--ff__inter);
+}
+
+p {
+  margin-top: 0;
+  // font-size: 1rem;
+  line-height: 1.6;
+  // font-family: var(--ff__inter);
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  font-family: var(--ff__montserrat);
+}

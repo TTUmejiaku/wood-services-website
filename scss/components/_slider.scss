@@ -1,0 +1,110 @@
+@use "../abstracts/breakpoints" as b;
+@use "../abstracts/functions" as f;
+@use "../abstracts/mixins" as m;
+@use "../globals/variables" as v;
+
+.slider-wrapper {
+  margin: f.rem(46) auto f.rem(14.9);
+  width: 80%;
+  min-width: f.rem(301);
+  min-height: f.rem(230);
+  overflow: hidden;
+  position: relative;
+
+  @include b.mq-up(medium) {
+    min-height: f.rem(406);
+    width: 90%;
+    margin-bottom: f.rem(38);
+  }
+  @include b.mq-up(large) {
+    min-height: f.rem(706);
+  }
+
+  &.table {
+    width: 90%;
+    border-radius: f.rem(16);
+    min-height: f.rem(406);
+
+    @include b.mq-up(large) {
+      min-height: f.rem(706);
+    }
+  }
+
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease-in-out;
+    border-radius: f.rem(14);
+    overflow: hidden;
+
+    @include b.mq-up(medium) {
+      border-radius: f.rem(42);
+    }
+
+    &__img {
+      // object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.slide-btn {
+  position: absolute;
+  width: f.rem(26.88);
+  background: none;
+  top: 60%;
+  cursor: pointer;
+
+  & img {
+    width: 100%;
+  }
+
+  @include b.mq-up(large) {
+    width: f.rem(52);
+  }
+}
+
+.arrow-right {
+  right: -3%;
+}
+
+.arrow-left {
+  left: -3%;
+}
+
+.slide-control {
+  width: 100%;
+  @include m.flex(row, center, center);
+
+  span {
+    width: f.rem(15.42);
+    height: f.rem(15.42);
+    display: inline-block;
+    border-radius: 50%;
+    border: 3px solid var(--light__blue-btn);
+    cursor: pointer;
+
+    @include b.mq-up(large) {
+      width: f.rem(26);
+      height: f.rem(26);
+    }
+  }
+
+  span + span {
+    margin-left: f.rem(9.29);
+
+    @include b.mq-up(large) {
+      margin-left: f.rem(12.29);
+    }
+  }
+
+  span:hover,
+  span:focus {
+    background-color: var(--vlight__blue-btn);
+  }
+
+  .slide-control-bg-color {
+    background-color: var(--vlight__blue-btn);
+  }
+}

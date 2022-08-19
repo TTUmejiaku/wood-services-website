@@ -1,0 +1,80 @@
+@use "../abstracts/breakpoints" as b;
+@use "../abstracts/functions" as f;
+@use "../abstracts/mixins" as m;
+@use "../globals/variables" as v;
+
+.card__wrapper {
+  display: flex;
+  overflow-x: scroll;
+
+  @include b.mq-up(medium) {
+    margin-top: f.rem(125);
+    @include m.flex(row, flex-start, space-between);
+  }
+  @include b.mq-up(large) {
+    overflow-x: auto;
+  }
+}
+
+.card + .card {
+  margin-left: f.rem(26);
+
+  @include b.mq-up(medium) {
+    margin-left: f.rem(94);
+  }
+}
+
+.card {
+  flex-shrink: 0;
+  width: f.rem(147);
+
+  @include b.mq-up(medium) {
+    width: f.rem(277);
+  }
+
+  > img {
+    width: f.rem(90);
+    margin: 0 auto f.rem(16);
+    display: block;
+
+    @include b.mq-up(medium) {
+      width: f.rem(205);
+      margin: 0;
+    }
+  }
+
+  > h3 {
+    text-align: center;
+    font-size: var(--fs-h3);
+
+    @include b.mq-up(medium) {
+      text-align: left;
+      padding-left: 30%;
+    }
+  }
+
+  li {
+    list-style: none;
+    font-size: f.rem(15);
+    font-family: var(--ff__inter);
+    font-weight: 500;
+    margin-bottom: f.rem(9);
+
+    @include b.mq-up(medium) {
+      font-size: f.rem(25);
+      margin-bottom: f.rem(28);
+    }
+
+    > img {
+      margin-right: f.rem(13);
+
+      @include b.mq-up(medium) {
+        width: f.rem(25);
+      }
+    }
+  }
+
+  & li:last-child {
+    margin-bottom: f.rem(29);
+  }
+}

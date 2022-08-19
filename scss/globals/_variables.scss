@@ -1,0 +1,30 @@
+@use "../abstracts/breakpoints" as b;
+@use "../abstracts/functions" as f;
+@use "../abstracts/mixins" as m;
+
+:root {
+  /***** colors *****/
+  // --bg__vdk-black: hsl(330, 3%, 13%);
+  --bg__dk-brown: hsl(330, 3%, 13%);
+  --bg__ox-blood: hsl(15, 67%, 7%);
+  --light__ox-blood: hsl(13, 62%, 34%);
+  --light-dk: hsl(0, 0%, 85%);
+  --light__brown: hsl(28, 100%, 87%);
+  --orange: hsl(16, 68%, 69%);
+  --light__blue-btn: hsl(215, 26%, 56%);
+  --vlight__blue-btn: hsl(223, 41%, 88%);
+  --white: hsl(0, 0%, 96%);
+  --neut__border: hsl(13, 82%, 23%);
+  --neut__active-bg: hsl(223, 42%, 88%);
+  --neut__text: #32353c;
+
+  /***** fonts *****/
+  --ff__inter: "Inter", sans-serif;
+  --ff__kyiv: "KyivTypeSans", sans-serif;
+  --ff__montserrat: "Montserrat", sans-serif;
+
+  --fs-h1: clamp(1.875rem, 1rem + 4.2vw, 5.625rem);
+  --fs-h2: clamp(1.75rem, 1rem + 3.5vw, 5.25rem);
+  --fs-h3: clamp(1.25rem, 0.875rem + 1.5vw, 1.875rem);
+  --fs-p: clamp(0.9375rem, 0.75rem + 1vw, 1.875rem);
+}

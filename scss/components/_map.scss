@@ -1,0 +1,15 @@
+@use "../abstracts/breakpoints" as b;
+@use "../abstracts/functions" as f;
+@use "../abstracts/mixins" as m;
+@use "../globals/variables" as v;
+
+#map {
+  width: 100%;
+  min-height: f.rem(230);
+  background-color: var(--white);
+  border-radius: f.rem(14);
+
+  @include b.mq-up(medium) {
+    min-height: f.rem(430);
+  }
+}

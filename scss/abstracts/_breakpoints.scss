@@ -1,0 +1,29 @@
+@use "./functions" as f;
+
+/* breakpoint map */
+$breakpoints-up: (
+  "medium": f.em(600),
+  "large": f.em(900),
+  "xlarge": f.em(1200),
+);
+
+/* breakpoint map */
+$breakpoints-down: (
+  "medium": f.em(599),
+  "large": f.em(899),
+  "xlarge": f.em(1199),
+);
+
+/* media query up mixin */
+@mixin mq-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+/* media query down mixin */
+@mixin mq-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}

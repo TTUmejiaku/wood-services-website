@@ -1,0 +1,79 @@
+@use "../abstracts/breakpoints" as b;
+@use "../abstracts/functions" as f;
+@use "../abstracts/mixins" as m;
+@use "../globals/variables" as v;
+
+.hero__btn,
+.advantages__btn,
+.error__btn,
+.form__btn {
+  background-color: var(--light__blue-btn);
+  color: var(--white);
+  font-weight: 700;
+  font-family: var(--ff__inter) !important;
+  text-align: center;
+  font-size: var(--fs-p);
+  display: block;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--neut__active-bg);
+    color: var(--neut__border);
+  }
+}
+
+.hero__btn {
+  padding: f.rem(8) f.rem(32);
+  border-radius: f.rem(21);
+
+  @include b.mq-up(medium) {
+    padding: f.rem(16) f.rem(70);
+    border-radius: f.rem(48);
+  }
+}
+
+.advantages__btn {
+  width: 70%;
+  margin-inline: auto;
+  padding: f.rem(7.5) f.rem(26.5);
+  border-radius: f.rem(42);
+
+  @include b.mq-up(medium) {
+    width: 50%;
+    font-size: f.rem(24);
+    padding: f.rem(15) f.rem(34);
+    margin: 0 auto;
+  }
+  @include b.mq-up(large) {
+    width: 30%;
+    margin-left: 15%;
+    padding: f.rem(20) f.rem(34);
+  }
+}
+
+.form__btn {
+  border-radius: f.rem(42);
+  padding: f.rem(8) f.rem(28);
+  margin-left: 0.5rem;
+
+  @include b.mq-up(medium) {
+    padding: f.rem(11) f.rem(70);
+  }
+}
+
+.error__btn {
+  width: 70%;
+  margin-inline: auto;
+  padding: f.rem(12) f.rem(26.5);
+  border-radius: f.rem(42);
+
+  @include b.mq-up(medium) {
+    width: 60%;
+    padding: f.rem(15) f.rem(34);
+  }
+  @include b.mq-up(large) {
+    width: 30%;
+    padding: f.rem(20) f.rem(34);
+  }
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../App.js/index.js" defer></script>
+
+    <title>Wood Product Services</title>
+  </head>
+  <body>
+    <!-- background overlay -->
+    <div class="bg-overlay"></div>
+
+    <!-- header section -->
+    <header class="header bg mt-m-43 mb-m-51 mb-d-121">
+      <div class="container row-ai-jc">
+        <a href="../index.html" class="header__logo">
+          <img src="../Assets/Images/logo-white.png" alt="" />
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./gallery.html" class="nav__link">Gallery</a>
+            </li>
+            <li class="nav__item">
+              <a href="./prices.html" class="nav__link">Prices for services</a>
+            </li>
+            <li class="nav__item">
+              <a href="./about.html" class="nav__link">About us</a>
+            </li>
+            <li class="nav__item">
+              <a href="./contact.html" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav__toggle">
+          <span class="hamburger first"></span>
+          <span class="hamburger second"></span>
+          <span class="hamburger third"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- our work section -->
+    <section class="our-work mb-m-93 mb-d-278">
+      <div class="container slider">
+        <h2 class="section-title mb-m-46 mb-d-121">OUR WORK</h2>
+        <div class="slider-wrapper">
+          <div class="slide">
+            <img
+              src="../Assets//Images/modern-wooden-kitchen-interior-steel-kitchen-faucet 2.png"
+              alt=""
+              class="slide__img"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../Assets/Images/kitchen-2.jpg"
+              alt=""
+              class="slide__img"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="../Assets/Images/collov-home-design--aDGbdTsBZg-unsplash.jpg"
+              alt=""
+              class="slide__img"
+            />
+          </div>
+        </div>
+        <button class="slide-btn arrow-right">
+          <img src="../Assets/Images/arrow-right.svg" alt="" />
+        </button>
+        <button class="slide-btn arrow-left">
+          <img src="../Assets/Images/arrow-left.svg" alt="" />
+        </button>
+        <div class="slide-control">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- features section -->
+    <section class="features mb-m-125 mb-d-256">
+      <div class="container w-60">
+        <h2 class="section-title mb-m-90">
+          THE WOOD WE <br />
+          WORK WITH
+        </h2>
+        <div class="card__wrapper">
+          <div class="card">
+            <img
+              src="../Assets//Images/old-wood-grain-background 2.png"
+              alt="oak"
+            />
+            <h3>Oak</h3>
+            <ul>
+              <li>
+                <img src="../Assets/Images/checkmark.svg" alt="" /> Durability
+              </li>
+              <li>
+                <img src="../Assets/Images/checkmark.svg" alt="" />Beautiful
+                texture
+              </li>
+              <li>
+                <img src="../Assets/Images/checkmark.svg" alt="" />Water
+                resistance
+              </li>
+              <li><img src="../Assets/Images/cross.svg" alt="" /> Expensive</li>
+            </ul>
+          </div>
+          <div class="card">
+            <img
+              src="../Assets//Images/wood-texture-design-decoration 1.png"
+              alt="oak"
+            />
+            <h3>Buk</h3>
+            <ul>
+              <li>
+                <img src="../Assets/Images/checkmark.svg" alt="" /> Durability
+              </li>
+              <li>
+                <img src="../Assets/Images/cross.svg" alt="" /> Hard to handle
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <img
+              src="../Assets//Images/pale-oak-wood-texture-design-background 1.png"
+              alt="oak"
+            />
+            <h3>Ash</h3>
+            <ul>
+              <li>
+                <img src="../Assets/Images/checkmark.svg" alt="" /> Durability
+              </li>
+              <li>
+                <img src="../Assets/Images/cross.svg" alt="" /> Hard to handle
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact mb-m-237">
+      <div class="container p-r">
+        <h2 class="section-title">ANY QUESTIONS?</h2>
+        <div class="row-r">
+          <div class="col">
+            <p>
+              Write to us and we will be sure to answer all your questions and
+              give you a comprehensive consultation.
+            </p>
+          </div>
+
+          <form action="#" class="form col">
+            <div class="form__group">
+              <input type="text" class="form__input" placeholder="Your name" />
+            </div>
+            <div class="form__group">
+              <input
+                type="number"
+                class="form__input"
+                placeholder="Your telephone number"
+              />
+            </div>
+            <div class="form__group">
+              <textarea
+                name="comment"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Your question"
+                class="form__textarea"
+              ></textarea>
+            </div>
+            <button class="form__btn" type="submit">Send</button>
+          </form>
+          <img
+            src="../Assets/Images/wood-cut-in-half.png"
+            alt=""
+            class="wood-cut"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col mb-m-46">
+            <img
+              src="../Assets/Images/logo-white.png"
+              alt=""
+              class="footer__logo"
+            />
+          </div>
+          <div class="col">
+            <img src="../Assets/Images/location.svg" alt="" />
+            <p>Na Plzeňce 1166/1 Прага 5 - Смихов, 150 00</p>
+          </div>
+          <div class="col">
+            <img src="../Assets/Images/telephone.svg" alt="" />
+            <p>+420 000 000 000</p>
+          </div>
+        </div>
+        <p class="footer__privacy-policy">Privacy Policy</p>
+      </div>
+    </footer>
+  </body>
+</html>

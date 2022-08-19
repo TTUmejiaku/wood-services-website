@@ -1,0 +1,56 @@
+@use "../abstracts/breakpoints" as b;
+@use "../abstracts/functions" as f;
+@use "../abstracts/mixins" as m;
+@use "../globals/variables" as v;
+
+.form {
+  margin-top: 2rem;
+
+  @include b.mq-up(medium) {
+    margin-top: 0;
+  }
+
+  &__group {
+    margin-bottom: f.rem(12);
+
+    @include b.mq-up(medium) {
+      margin-bottom: f.rem(23);
+    }
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    background: transparent;
+    border: 2px solid var(--light__blue-btn);
+    padding: f.rem(14) f.rem(19);
+
+    @include b.mq-up(medium) {
+      border-width: 4px;
+    }
+
+    &::placeholder {
+      color: var(--light-dk);
+      font-weight: 500;
+    }
+
+    &:focus {
+      border-color: var(--neut__border);
+      background-color: var(--neut__active-bg);
+      outline: none;
+
+      &::placeholder {
+        color: var(--neut__text);
+      }
+    }
+  }
+
+  &__input {
+    border-radius: f.rem(42);
+  }
+
+  &__textarea {
+    border-radius: f.rem(14);
+    margin-bottom: f.rem(20);
+  }
+}

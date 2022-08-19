@@ -1,0 +1,68 @@
+@use "../abstracts/breakpoints" as b;
+@use "../abstracts/functions" as f;
+@use "../abstracts/mixins" as m;
+@use "../globals/variables" as v;
+
+.slide.grid {
+  display: grid;
+  grid-template-columns: 100%;
+  // grid-template-rows: f.rem(117) f.rem(88);
+  grid-template-rows: 60% 40%;
+  justify-content: center;
+  padding: f.rem(8);
+  border-radius: f.rem(14);
+  gap: 8px;
+  overflow: hidden;
+
+  @include b.mq-up(medium) {
+    grid-template-columns: 55% 40%;
+    grid-template-rows: auto;
+  }
+
+  .slide__table {
+    background: var(--light-dk);
+    color: var(--bg__dk-brown);
+    border-collapse: collapse;
+    border-radius: f.rem(14);
+    // max-width: f.rem(30);
+
+    // &:nth-child(3),
+    // &:nth-child(4) {
+    //   display: none;
+    // }
+
+    tbody {
+      tr {
+        &:not(last-child) {
+          border-bottom: 1px dashed var(--light__ox-blood);
+        }
+
+        &:last-child {
+          border: 0;
+        }
+
+        td {
+          padding: f.rem(8);
+          text-align: center;
+        }
+
+        &:first-child td {
+          font-weight: 700;
+        }
+      }
+    }
+
+    &.three {
+      tbody tr:first-child td:last-child {
+        border-radius: 0 f.rem(14) 0 0;
+      }
+      tbody tr:last-child td:last-child {
+        border-radius: 0 0 f.rem(14) 0;
+      }
+
+      tbody tr td:last-child {
+        background: var(--orange);
+      }
+    }
+  }
+}

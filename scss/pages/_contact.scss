@@ -1,0 +1,37 @@
+@use "../abstracts/breakpoints" as b;
+@use "../abstracts/functions" as f;
+@use "../abstracts/mixins" as m;
+@use "../globals/variables" as v;
+
+.contact-page {
+  .contact {
+    @include b.mq-up(large) {
+      display: none;
+    }
+  }
+}
+
+.contact-2 {
+  &__phone-number,
+  &__address {
+    @include m.flex(row, center, flex-start);
+    gap: f.rem(16);
+
+    @include b.mq-up(large) {
+      gap: f.rem(20);
+      width: 70%;
+    }
+
+    img {
+      width: clamp(f.rem(24), f.rem(16) + 2vw, f.rem(39));
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  &__phone-number {
+    margin-bottom: f.rem(24);
+  }
+}

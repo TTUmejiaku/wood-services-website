@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "KyivTypeSans";
+  src: url("/Assets/Fonts/KyivTypeSansRegular/font.woff2") format("woff2"),
+    url("/Assets/Fonts/KyivTypeSansRegular/font.woff") format("woff");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "KyivTypeSans";
+  src: url("/Assets/Fonts/KyivTypeSansMedium/font.woff2") format("woff2"),
+    url("/Assets/Fonts/KyivTypeSansMedium/font.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "KyivTypeSans";
+  src: url("/Assets/Fonts/KyivTypeSansBold/font.woff2") format("woff2"),
+    url("/Assets/Fonts/KyivTypeSansBold/font.woff") format("woff");
+  font-weight: bold;
+}

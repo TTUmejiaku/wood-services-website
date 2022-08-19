@@ -1,0 +1,33 @@
+@use "../abstracts/breakpoints" as b;
+@use "../abstracts/functions" as f;
+@use "../abstracts/mixins" as m;
+@use "../globals/variables" as v;
+
+.error-page {
+  // width: 100vw;
+  // @include m.flex(column, center, center);
+  text-align: center;
+
+  & .hero__bg--img {
+    min-height: 90vh;
+
+    @include b.mq-up(medium) {
+      min-height: 100vh;
+    }
+  }
+
+  .error {
+    .container {
+      & h1 {
+        font-size: var(--fs-h1);
+        margin-bottom: f.rem(12);
+      }
+
+      p {
+        color: var(--orange);
+        font-size: var(--fs-p);
+        margin-bottom: f.rem(34);
+      }
+    }
+  }
+}
